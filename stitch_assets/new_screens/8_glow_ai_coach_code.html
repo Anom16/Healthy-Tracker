@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#121314;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-fixed-dim": "#adcfaf", "inverse-on-surface": "#303031", "secondary-container": "#325038", "on-primary-fixed": "#03210c", "error-container": "#93000a", "on-tertiary-container": "#203c27", "on-tertiary-fixed": "#05210f", "surface-bright": "#39393a", "secondary-fixed": "#c8ebcc", "on-surface": "#e3e2e3", "on-secondary-fixed": "#03210e", "on-background": "#e3e2e3", "surface-tint": "#adcfaf", "surface-container-lowest": "#0d0e0f", "tertiary": "#afceb2", "on-primary": "#193620", "primary-fixed": "#c8ebca", "on-primary-container": "#1f3c25", "tertiary-container": "#88a68c", "surface-container-low": "#1b1c1d", "tertiary-fixed": "#caebcd", "primary": "#adcfaf", "outline": "#8c928a", "on-tertiary-fixed-variant": "#314d37", "surface": "#121314", "outline-variant": "#424842", "primary-container": "#86a789", "on-secondary": "#193621", "on-secondary-container": "#9fc1a3", "surface-container-highest": "#343536", "surface-container": "#1f2021", "surface-container-high": "#292a2b", "on-secondary-fixed-variant": "#2f4d36", "tertiary-fixed-dim": "#afceb2", "secondary-fixed-dim": "#adcfb1", "on-error-container": "#ffdad6", "on-tertiary": "#1b3622", "inverse-primary": "#47664b", "on-surface-variant": "#c2c8bf", "inverse-surface": "#e3e2e3", "surface-variant": "#343536", "surface-dim": "#121314", "on-primary-fixed-variant": "#304d35", "on-error": "#690005", "background": "#121314", "secondary": "#adcfb1", "error": "#ffb4ab" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.25rem", "gutter": "1rem", "space-xl": "2rem", "margin": "1.25rem", "space-xs": "0.25rem" }, fontFamily: { "body-md": ["Plus Jakarta Sans"], "label-caps": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "display-hero": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, fontSize: { "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "400" }], "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "title-md": ["17px", { "lineHeight": "22px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-hero": ["56px", { "lineHeight": "60px", "letterSpacing": "-0.03em", "fontWeight": "300" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500" }], "display-hero-mobile": ["44px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "300" }], "headline-lg": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "500" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="GlowSculpt Vitality Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XgXAU421Ds2WswwnLpY6b4aLHjlvZj1P-L6gKKca6whhNnROsNN0oNGucBIkOe0M2eVXf5U0r1ENrq2M0lQlZRYB6TYN-FiloDustL9lGGSMXJKPk8qUYWkHQpxp6_hKDNEaq2wU8kEJiMfOVOfwO762rUIPSFnUzjxCrnUxH8TGliYkKzYfm7TLGPpsI9XsaliGgvyCD84A51QaX5qhsX7YcDWqbrvaV36neWcnz-Q7HB7IYS8SP2"/><div class="flex flex-col"><span class="font-label-caps text-label-caps uppercase text-primary tracking-widest">GlowSculpt</span><span class="font-title-md text-title-md text-on-surface leading-tight">Home</span></div></div><div class="flex items-center gap-space-xs"><a class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[22px]">settings</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-28 bg-surface min-h-screen"><div class="flex flex-col w-full text-on-surface">
+<!-- Interactive Script for Tab Active Sync and UI Dynamics -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Sync bottom navigation active state to 4th tab (AI)
+      const navLinks = document.querySelectorAll('nav a');
+      navLinks.forEach((link) => {
+        link.classList.remove('text-primary');
+        link.classList.add('text-on-surface-variant');
+      });
+      const aiTab = document.querySelector('nav a[data-path="sanctuary-ai"]');
+      if (aiTab) {
+        aiTab.classList.remove('text-on-surface-variant');
+        aiTab.classList.add('text-primary');
+      }
+    });
+
+    function selectQuickPrompt(text) {
+      const input = document.getElementById('ai-query-input');
+      if (input) {
+        input.value = text;
+        input.focus();
+      }
+    }
+
+    function togglePrivacyMode(mode) {
+      const offlineBtn = document.getElementById('mode-offline-btn');
+      const cloudBtn = document.getElementById('mode-cloud-btn');
+      const hintText = document.getElementById('privacy-mode-hint');
+      const topPill = document.getElementById('vault-status-pill');
+
+      if (mode === 'offline') {
+        offlineBtn.className = "flex-1 py-1.5 px-3 rounded-full text-center font-label-md text-label-md transition-all duration-200 bg-secondary-container text-on-surface shadow-sm";
+        cloudBtn.className = "flex-1 py-1.5 px-3 rounded-full text-center font-label-md text-label-md transition-all duration-200 text-on-surface-variant hover:text-on-surface";
+        hintText.innerText = "Data diproses secara lokal langsung dari IndexedDB tanpa meninggalkan perangkat Anda.";
+        topPill.innerHTML = '<span class="material-symbols-outlined text-[14px] text-primary">verified_user</span><span class="font-label-caps text-label-caps uppercase tracking-wider text-primary">Local Vault (AES-256)</span>';
+      } else {
+        cloudBtn.className = "flex-1 py-1.5 px-3 rounded-full text-center font-label-md text-label-md transition-all duration-200 bg-secondary-container text-on-surface shadow-sm";
+        offlineBtn.className = "flex-1 py-1.5 px-3 rounded-full text-center font-label-md text-label-md transition-all duration-200 text-on-surface-variant hover:text-on-surface";
+        hintText.innerText = "Sintesis mendalam didukung model Gemini Secure Cloud dengan enkripsi ephemeral.";
+        topPill.innerHTML = '<span class="material-symbols-outlined text-[14px] text-primary">cloud_sync</span><span class="font-label-caps text-label-caps uppercase tracking-wider text-primary">Cloud Gemini Active</span>';
+      }
+    }
+  </script>
+<!-- Editorial Top Bar / Sanctuary Header -->
+<section class="px-margin pt-4 pb-2">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center p-1.5 overflow-hidden">
+<img alt="Glow AI Emblem" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U38WMY2rKYocSdThIVmwit_vAAg-yJgf80DuIs_TR0JDxSy073U_ZyUhpxvXj623Id3paN5rkaRsJPgGECDpVIJzqGSJZ6Zt53tgm0mnGLKlEK3p6-Iuc5IoSukhiVwQYLVDELwVckrdXut_At8Bjk4rgjd0FHr0g8up7qAV2hGa8XOCg7NJE0TXCTwl8RwVQhydP0wlD5aox7gzrkDOJx5R3Rm7mc_nkA0Riep0kt_VJojMkKmaDUig"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface font-semibold tracking-tight">Glow AI</span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded-full bg-secondary-container/60 text-primary font-label-caps text-[9px] uppercase tracking-wider">v2.4 Core</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Evidence-Based Longevity Coach</span>
+</div>
+</div>
+<!-- Privacy Status Pill -->
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low shadow-sm" id="vault-status-pill">
+<span class="material-symbols-outlined text-[14px] text-primary">verified_user</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-primary">Local Vault (AES-256)</span>
+</div>
+</div>
+</section>
+<!-- Dual-Privacy Segmented Switch -->
+<section class="px-margin pt-2 pb-3">
+<div class="p-1 rounded-full bg-surface-container-lowest flex items-center shadow-inner">
+<button class="flex-1 py-1.5 px-3 rounded-full text-center font-label-md text-label-md transition-all duration-200 bg-secondary-container text-on-surface shadow-sm" id="mode-offline-btn" onclick="togglePrivacyMode('offline')">
+        Offline Vault (100% On-Device)
+      </button>
+<button class="flex-1 py-1.5 px-3 rounded-full text-center font-label-md text-label-md transition-all duration-200 text-on-surface-variant hover:text-on-surface" id="mode-cloud-btn" onclick="togglePrivacyMode('cloud')">
+        Cloud Synthesis (Gemini)
+      </button>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant text-center mt-2 px-space-xs transition-opacity duration-300" id="privacy-mode-hint">
+      Data diproses secara lokal langsung dari IndexedDB tanpa meninggalkan perangkat Anda.
+    </p>
+</section>
+<!-- Daily AI Briefing Card (Morning Insight) -->
+<section class="px-margin pt-1 pb-4">
+<div class="relative rounded-2xl bg-surface-container-low p-space-lg shadow-md overflow-hidden">
+<!-- Ambient aura glow overlay -->
+<div class="absolute -right-10 -top-10 w-44 h-44 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<!-- Header row inside card -->
+<div class="flex items-center justify-between mb-3 relative z-10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-semibold">Daily Briefing • Mon, 29 Sep</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-caps text-[10px]">Optimal Sleep Rhythm</span>
+</div>
+<!-- Synthesis Body -->
+<div class="relative z-10 space-y-2.5">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+          Berdasarkan <span class="font-semibold text-primary">14 hari pencatatan</span> Anda, kualitas tidur semalam (<span class="font-medium text-on-surface">7h 20m</span>) berada <span class="text-primary font-medium">+8%</span> di atas baseline. Konsumsi kafein tercatat berhenti pada <span class="font-medium text-on-surface">09:30 AM</span> — korelasi menunjukkan waktu <em class="not-italic text-on-surface">cut-off</em> ini konsisten menurunkan fragmentasi tidur malam hari.
+        </p>
+<!-- Actionable Nudge Sub-Card -->
+<div class="mt-3 p-3 rounded-xl bg-surface-container flex items-start gap-2.5">
+<div class="w-6 h-6 rounded-full bg-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-primary">water_drop</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-primary">Rekomendasi Restorasi</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-xs mt-0.5">
+              Hidrasi sore: <strong class="text-on-surface font-semibold">+500 ml air mineral</strong> untuk menjaga keseimbangan retensi sodium dari makan siang Anda.
+            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Ask My Data: Interactive Quick Prompts -->
+<section class="pb-3">
+<div class="px-margin flex items-center justify-between mb-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">lightbulb</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant">Ask My Data • Quick Prompts</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-xs">Geser horizontal</span>
+</div>
+<!-- Scrollable pill rail -->
+<div class="flex gap-2 overflow-x-auto px-margin no-scrollbar py-1">
+<button class="shrink-0 px-3.5 py-2 rounded-full bg-surface-container-low hover:bg-surface-container active:scale-95 transition-all text-on-surface text-left flex items-center gap-2" onclick="selectQuickPrompt('Bagaimana ringkasan minggu saya?')">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md">Bagaimana ringkasan minggu saya?</span>
+</button>
+<button class="shrink-0 px-3.5 py-2 rounded-full bg-surface-container-low hover:bg-surface-container active:scale-95 transition-all text-on-surface text-left flex items-center gap-2" onclick="selectQuickPrompt('Apakah waktu tidur mempengaruhi sembab wajah?')">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md">Apakah waktu tidur mempengaruhi sembab wajah?</span>
+</button>
+<button class="shrink-0 px-3.5 py-2 rounded-full bg-surface-container-low hover:bg-surface-container active:scale-95 transition-all text-on-surface text-left flex items-center gap-2" onclick="selectQuickPrompt('Kapan asupan sodium saya paling stabil?')">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md">Kapan asupan sodium saya paling stabil?</span>
+</button>
+<button class="shrink-0 px-3.5 py-2 rounded-full bg-surface-container-low hover:bg-surface-container active:scale-95 transition-all text-on-surface text-left flex items-center gap-2" onclick="selectQuickPrompt('Review korelasi kafein &amp; energi harian')">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md">Review korelasi kafein &amp; energi</span>
+</button>
+</div>
+</section>
+<!-- Contextual Dialogue / Synthesis Stream -->
+<section class="px-margin py-2 space-y-4">
+<!-- User Query Bubble -->
+<div class="flex justify-end">
+<div class="max-w-[85%] rounded-2xl rounded-tr-sm bg-surface-container-high px-4 py-3 shadow-sm">
+<div class="flex items-center gap-1.5 mb-1 justify-end">
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider">Anda • 10:14 AM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+          Kapan tingkat sembab wajah (puffiness) saya paling rendah bulan ini?
+        </p>
+</div>
+</div>
+<!-- Glow AI Synthesis Bubble -->
+<div class="flex flex-col items-start max-w-full">
+<div class="rounded-2xl rounded-tl-sm bg-surface-container-low p-space-lg shadow-md relative w-full space-y-3">
+<!-- AI Identity Header inside Bubble -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[15px] text-primary" style="font-variation-settings: 'FILL' 1;">arrow_back_ios_new</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-medium">Glow AI Longevity Engine</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant text-[10px]">IndexedDB Query #084</span>
+</div>
+<!-- Main synthesis premise -->
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+          Berdasarkan <span class="font-semibold text-primary">21 entri "Appearance Check"</span> dan log kebiasaan 30 hari terakhir:
+        </p>
+<!-- Structured Data Insights Cards -->
+<div class="space-y-2">
+<!-- Point 1 -->
+<div class="p-3 rounded-xl bg-surface-container flex items-start gap-3">
+<div class="mt-0.5 w-5 h-5 rounded-full bg-secondary-container/80 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[13px] text-primary">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Puffiness Terendah (Skala 1/5)</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-xs mt-0.5 leading-normal">
+                Konsisten terjadi saat asupan air <strong class="text-on-surface">≥ 2.1L</strong> dan santap malam selesai sebelum <strong class="text-on-surface">pk 19:30</strong>.
+              </span>
+</div>
+</div>
+<!-- Point 2 -->
+<div class="p-3 rounded-xl bg-surface-container flex items-start gap-3">
+<div class="mt-0.5 w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[13px] text-primary">trending_up</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Dampak Sodium Harian</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-xs mt-0.5 leading-normal">
+                Saat sodium melebihi <strong class="text-on-surface">2.100 mg</strong>, persepsi sembab pagi hari tercatat meningkat rata-rata <strong class="text-primary font-semibold">35%</strong> pada foto logging hari berikutnya.
+              </span>
+</div>
+</div>
+</div>
+<!-- Micro Correlation Sparkline Visual -->
+<div class="p-3 rounded-xl bg-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant">Korelasi Hidrasi vs Puffiness</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Koefisien Negatif Kuat (r = -0.72)</span>
+</div>
+<div class="w-24 h-7">
+<svg class="w-full h-full" fill="none" viewbox="0 0 96 28">
+<path class="text-primary" d="M2 4 C 18 6, 26 18, 45 15 C 60 12, 75 24, 94 22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<circle class="fill-primary" cx="94" cy="22" r="3"></circle>
+</svg>
+</div>
+</div>
+<!-- Scientific Guardrail Disclaimer -->
+<div class="pt-1 flex items-start gap-2 text-on-surface-variant/90">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant shrink-0 mt-0.5">info</span>
+<p class="font-label-sm text-label-sm text-[11px] leading-relaxed">
+            Asosiasi observasional lokal (n=21). Bukan diagnosis medis. Disarankan menjaga hidrasi dan pola istirahat teratur untuk kesehatan jaringan selular.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Input Console (Docked above App Shell Tab Bar) -->
+<section class="px-margin pt-3 pb-2 sticky bottom-20 z-40 bg-gradient-to-t from-surface via-surface/95 to-transparent backdrop-blur-md">
+<div class="relative rounded-2xl bg-surface-container-low p-1.5 shadow-lg flex items-center gap-2">
+<!-- Sparkle / Context Mode Indicator -->
+<button class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary hover:text-on-surface transition-colors shrink-0" title="Audio Inquiry / Context Tool">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+<!-- Input Field -->
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant focus:outline-none px-1" id="ai-query-input" placeholder="Tanya data kesehatan &amp; kebiasaan lokal Anda..." type="text"/>
+<!-- Action Send Button -->
+<button class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary active:scale-95 transition-transform shrink-0 shadow-sm" title="Kirim Pertanyaan">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">arrow_upward</span>
+</button>
+</div>
+<!-- Security & Ethics Micro-Guarantee Footer -->
+<div class="flex items-center justify-center gap-2 pt-2 text-center">
+<span class="material-symbols-outlined text-[12px] text-primary">lock</span>
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-on-surface-variant">AES-256 Encrypted • Zero Data Selling • Non-Diagnostic</span>
+</div>
+</section>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.3)]" data-active-classes="text-primary"><div class="flex items-center justify-around h-20 px-margin max-w-md mx-auto"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">spa</span><span class="font-label-sm text-label-sm tracking-wide">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="journal" href="#"><span class="material-symbols-outlined text-[24px]">auto_stories</span><span class="font-label-sm text-label-sm tracking-wide">Journal</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="insights" href="#"><span class="material-symbols-outlined text-[24px]">ssid_chart</span><span class="font-label-sm text-label-sm tracking-wide">Insights</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="sanctuary-ai" href="#"><span class="material-symbols-outlined text-[24px]">hotel_class</span><span class="font-label-sm text-label-sm tracking-wide">AI</span></a></div></nav></body></html>

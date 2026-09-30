@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#faf9f5;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "outline": "#727972",
+        "inverse-primary": "#a6d1b0",
+        "on-tertiary": "#ffffff",
+        "background": "#faf9f5",
+        "surface-tint": "#40674c",
+        "secondary-container": "#c3e9ca",
+        "tertiary-fixed-dim": "#bfc9c3",
+        "on-primary": "#ffffff",
+        "on-tertiary-container": "#eff9f2",
+        "surface-container-lowest": "#ffffff",
+        "on-secondary-container": "#486a51",
+        "inverse-on-surface": "#f2f1ed",
+        "on-tertiary-fixed": "#151d1a",
+        "secondary-fixed-dim": "#aad0b1",
+        "surface-container-high": "#e9e8e4",
+        "primary-fixed": "#c2edcb",
+        "on-primary-fixed-variant": "#294e35",
+        "secondary": "#44664d",
+        "outline-variant": "#e7e5e0",
+        "on-secondary-fixed-variant": "#2d4e37",
+        "surface-variant": "#f0eee9",
+        "error-container": "#ffdad6",
+        "tertiary": "#515a56",
+        "surface-container-highest": "#e3e2df",
+        "on-background": "#1b1c1a",
+        "surface-container": "#efeeea",
+        "secondary-fixed": "#c6eccd",
+        "tertiary-fixed": "#dbe5df",
+        "surface": "#faf9f5",
+        "surface-container-low": "#ffffff",
+        "surface-bright": "#faf9f5",
+        "on-primary-container": "#d9ffe0",
+        "on-secondary": "#ffffff",
+        "on-primary-fixed": "#00210e",
+        "on-surface-variant": "#696e69",
+        "primary-fixed-dim": "#a6d1b0",
+        "primary": "#3a6046",
+        "primary-container": "#52795d",
+        "tertiary-container": "#69736e",
+        "surface-dim": "#dbdad6",
+        "on-tertiary-fixed-variant": "#3f4945",
+        "on-error": "#ffffff",
+        "inverse-surface": "#30312e",
+        "error": "#ba1a1a",
+        "on-error-container": "#93000a",
+        "on-surface": "#1b1c1a",
+        "on-secondary-fixed": "#00210e"
+      },
+      borderRadius: {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      spacing: {
+        "space-sm": "0.5rem",
+        "space-md": "1rem",
+        "space-lg": "1.25rem",
+        "gutter": "1rem",
+        "space-xl": "2rem",
+        "margin": "1.25rem",
+        "space-xs": "0.25rem"
+      },
+      fontFamily: {
+        "body-md": ["Plus Jakarta Sans"],
+        "label-caps": ["Plus Jakarta Sans"],
+        "headline-sm": ["Plus Jakarta Sans"],
+        "title-md": ["Plus Jakarta Sans"],
+        "display-hero": ["Plus Jakarta Sans"],
+        "label-sm": ["Plus Jakarta Sans"],
+        "body-lg": ["Newsreader", "Plus Jakarta Sans"],
+        "label-md": ["Plus Jakarta Sans"],
+        "display-hero-mobile": ["Plus Jakarta Sans"],
+        "headline-lg": ["Newsreader", "Plus Jakarta Sans"],
+        "headline-md": ["Newsreader", "Plus Jakarta Sans"]
+      },
+      fontSize: {
+        "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "400" }],
+        "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+        "headline-sm": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+        "title-md": ["17px", { "lineHeight": "22px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+        "display-hero": ["56px", { "lineHeight": "60px", "letterSpacing": "-0.03em", "fontWeight": "300" }],
+        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "400" }],
+        "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+        "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+        "display-hero-mobile": ["44px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "300" }],
+        "headline-lg": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+        "headline-md": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "500" }]
+      }
+    }
+  }
+}</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl border-b border-outline-variant/60 shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="h-8 w-8 rounded-full overflow-hidden flex items-center justify-center shrink-0"><img alt="GlowSculpt Vitality Logo" class="h-8 w-8 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U38WMY2rKYocSdThIVmwit_vAAg-yJgf80DuIs_TR0JDxSy073U_ZyUhpxvXj623Id3paN5rkaRsJPgGECDpVIJzqGSJZ6Zt53tgm0mnGLKlEK3p6-Iuc5IoSukhiVwQYLVDELwVckrdXut_At8Bjk4rgjd0FHr0g8up7qAV2hGa8XOCg7NJE0TXCTwl8RwVQhydP0wlD5aox7gzrkDOJx5R3Rm7mc_nkA0Riep0kt_VJojMkKmaDUig"/></div><div class="flex flex-col"><span class="font-label-caps text-label-caps uppercase text-primary font-semibold tracking-widest">GlowSculpt</span><span class="font-title-md text-title-md text-on-surface leading-tight">Home</span></div></div><div class="flex items-center gap-space-xs"><a class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[22px]">settings</span></a><div class="w-8 h-8 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-28 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin pb-6 gap-space-xl">
+<!-- Top Greeting Section -->
+<div class="flex items-end justify-between pt-2">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Monday, 29 September</span>
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight font-medium">Good morning, Anom</h1>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low border border-outline-variant/80 shadow-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Sanctuary Sync</span>
+</div>
+</div>
+<!-- Focal Point: Daily Wellness Vitality Indicator -->
+<div class="relative w-full rounded-2xl bg-surface-container-low p-space-lg overflow-hidden border border-outline-variant/80 shadow-[0_2px_12px_rgba(0,0,0,0.03)]">
+<!-- Ambient Subtle Glow Aura -->
+<div class="absolute -top-16 -right-16 w-48 h-48 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-16 -left-16 w-48 h-48 rounded-full bg-secondary-container/40 blur-3xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-md relative z-10">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase font-semibold">Daily Wellness</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">nature_people</span>
+</div>
+<div class="flex items-center justify-between gap-4">
+<div class="flex flex-col">
+<div class="flex items-baseline gap-1">
+<span class="font-display-hero-mobile text-display-hero-mobile text-on-surface font-light tracking-tight">78</span>
+<span class="font-title-md text-title-md text-on-surface-variant font-light">/100</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface-variant mt-0.5">Personal consistency indicator</span>
+</div>
+<!-- Serene Organic Arc (Inline SVG, lightweight, calm spa vibe) -->
+<div class="relative w-20 h-20 flex items-center justify-center shrink-0">
+<svg aria-hidden="true" class="w-full h-full -rotate-90" viewbox="0 0 72 72">
+<circle class="text-surface-container-high opacity-70" cx="36" cy="36" fill="none" r="30" stroke="currentColor" stroke-width="3"></circle>
+<circle class="text-primary transition-all duration-700 ease-out" cx="36" cy="36" fill="none" r="30" stroke="currentColor" stroke-dasharray="188.5" stroke-dashoffset="41.5" stroke-linecap="round" stroke-width="3.5"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+</div>
+</div>
+<div class="pt-1 flex items-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container border border-outline-variant/60">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">+4 vs your 14-day baseline</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Today's Habits: Curated 2x2 Grid -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Today's Habits</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">All on rhythm</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Habit 1: Water -->
+<div class="flex flex-col justify-between rounded-xl bg-surface-container-low p-space-md min-h-[124px] border border-outline-variant/80 shadow-[0_1px_6px_rgba(0,0,0,0.02)] transition-transform active:scale-[0.98]">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Hydration</span>
+<div class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">water_drop</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 mt-2">
+<div class="flex items-baseline justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-normal">1.4 <span class="text-label-md text-on-surface-variant font-light">/ 2L</span></span>
+<span class="font-label-caps text-label-caps text-primary font-semibold">70%</span>
+</div>
+<!-- Minimal progress bar -->
+<div class="w-full h-1 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 70%;"></div>
+</div>
+</div>
+</div>
+<!-- Habit 2: Sleep -->
+<div class="flex flex-col justify-between rounded-xl bg-surface-container-low p-space-md min-h-[124px] border border-outline-variant/80 shadow-[0_1px_6px_rgba(0,0,0,0.02)] transition-transform active:scale-[0.98]">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Rest &amp; Restoration</span>
+<div class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">bedtime</span>
+</div>
+</div>
+<div class="flex flex-col gap-0.5 mt-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-normal">7h 20m</span>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Quality: Rested</span>
+</div>
+</div>
+</div>
+<!-- Habit 3: Caffeine -->
+<div class="flex flex-col justify-between rounded-xl bg-surface-container-low p-space-md min-h-[124px] border border-outline-variant/80 shadow-[0_1px_6px_rgba(0,0,0,0.02)] transition-transform active:scale-[0.98]">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Caffeine</span>
+<div class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">coffee</span>
+</div>
+</div>
+<div class="flex flex-col gap-0.5 mt-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-normal">1 cup</span>
+<div class="flex items-center gap-1 mt-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span class="font-label-sm text-label-sm">Cutoff 9:30 AM</span>
+</div>
+</div>
+</div>
+<!-- Habit 4: Active -->
+<div class="flex flex-col justify-between rounded-xl bg-surface-container-low p-space-md min-h-[124px] border border-outline-variant/80 shadow-[0_1px_6px_rgba(0,0,0,0.02)] transition-transform active:scale-[0.98]">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Gentle Motion</span>
+<div class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">directions_walk</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 mt-2">
+<div class="flex items-baseline justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-normal">4.2k <span class="text-label-md text-on-surface-variant font-light">/ 6k</span></span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">steps</span>
+</div>
+<!-- Minimal progress bar -->
+<div class="w-full h-1 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 70%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sanctuary Visual Atmosphere -->
+<div class="relative w-full h-36 rounded-2xl overflow-hidden bg-surface-container-low border border-outline-variant/80 shadow-[0_2px_12px_rgba(0,0,0,0.03)]">
+<div class="w-full h-full bg-cover bg-center" data-alt="A tranquil luxury nocturnal spa suite with dim ambient candlelight, warm slate stone textures, a shallow pool of reflective dark water, and minimalist botanical eucalyptus accents in soft sage greens." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA8_OKv7y0QzqQer1wBGVMDFNjIXHqNSZkF9nwYyuA8VnR5CusN5CFCEDRk22q1ka-WatTKAD4_sQq8Ankef22bz_icumc5FSxJFq6vYBSC-OMmzwE4u_B_EIfRxaOsJl36jsC-Ii8_35qWagwcKr4SzpECQDTUPdTCZewtrpLIEZF2zqJrY_C7nrx8FcF6FH0vg2ECOZM-wVLjWCU29LbEu-ByyHxSVnFu_9oLupF00r1tsJDjWTs')">
+<div class="w-full h-full bg-gradient-to-t from-black/80 via-black/40 to-transparent p-space-md flex flex-col justify-end">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-primary-fixed uppercase tracking-wider font-medium">Atmospheric Guide</span>
+<span class="font-title-md text-title-md text-white font-medium">Breathe &amp; Reset Moment</span>
+</div>
+<button aria-label="Play soundscape" class="w-9 h-9 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center text-on-surface active:scale-95 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Today's Pattern: Editorial Insight -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest px-1">Today's Pattern</span>
+<div class="rounded-2xl bg-surface-container-low p-space-lg relative overflow-hidden flex flex-col gap-space-sm border border-outline-variant/80 shadow-[0_2px_12px_rgba(0,0,0,0.03)]">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-caps text-label-caps text-primary tracking-wider uppercase font-semibold">Longevity Synthesis</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface italic font-normal leading-relaxed">
+        “Your sleep rhythm showed 18% less fragmentation this week. Morning recovery index is gently trending up +6%.”
+      </p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Validated against 7-day wearable telemetry</span>
+<span class="material-symbols-outlined text-outline text-[16px]">auto_awesome</span>
+</div>
+</div>
+</div>
+<!-- Prominent Quick Add Action -->
+<div class="flex flex-col items-center pt-2">
+<button class="w-full max-w-sm h-14 rounded-full bg-surface-container-low border border-outline-variant hover:border-primary/40 hover:bg-surface-container active:scale-[0.985] transition-all flex items-center justify-center gap-3 px-6 shadow-sm group" id="quick-log-btn">
+<div class="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-[20px]">add</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface font-medium">Quick Log</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full border border-outline-variant/60">&lt; 5s</span>
+</button>
+</div>
+<!-- Micro-Interaction Feedback Pill (Hidden by default) -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 bg-white/95 border border-outline-variant/80 backdrop-blur-md px-4 py-2 rounded-full flex items-center gap-2 shadow-lg transition-all duration-300 opacity-0 pointer-events-none translate-y-2 z-50" id="log-toast">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Log entry recorded into Sanctuary</span>
+</div>
+</div>
+<script>
+  (function() {
+    const btn = document.getElementById('quick-log-btn');
+    const toast = document.getElementById('log-toast');
+    let timeoutId;
+
+    if (btn && toast) {
+      btn.addEventListener('click', function() {
+        clearTimeout(timeoutId);
+        toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-2');
+        toast.classList.add('opacity-100', 'translate-y-0');
+
+        timeoutId = setTimeout(function() {
+          toast.classList.remove('opacity-100', 'translate-y-0');
+          toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-2');
+        }, 2400);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl border-t border-outline-variant/70 shadow-[0_-4px_20px_rgba(0,0,0,0.04)]" data-active-classes="text-primary"><div class="flex items-center justify-around h-20 px-margin max-w-md mx-auto"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-1 transition-colors text-primary font-medium" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">spa</span><span class="font-label-sm text-label-sm tracking-wide">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="journal" href="#"><span class="material-symbols-outlined text-[24px]">auto_stories</span><span class="font-label-sm text-label-sm tracking-wide">Journal</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="insights" href="#"><span class="material-symbols-outlined text-[24px]">ssid_chart</span><span class="font-label-sm text-label-sm tracking-wide">Insights</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="sanctuary-ai" href="#"><span class="material-symbols-outlined text-[24px]">hotel_class</span><span class="font-label-sm text-label-sm tracking-wide">AI</span></a></div></nav></body></html>

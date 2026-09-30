@@ -1,6 +1,6 @@
 {
   "appId": "com.glowsculpt.app",
-  "appName": "GlowSculpt",
+  "appName": "Healthy Tracker",
   "webDir": "dist",
   "bundledWebRuntime": false,
   "server": {

@@ -1,6 +1,109 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" fill="none">
-  <circle cx="50" cy="50" r="46" stroke="#2A2E2C" stroke-width="2"/>
-  <path d="M50 18 C34 32, 28 50, 50 82 C72 50, 66 32, 50 18 Z" fill="none" stroke="#8DA893" stroke-width="2.5" stroke-linejoin="round"/>
-  <circle cx="50" cy="46" r="6" fill="#8DA893"/>
-  <path d="M50 28 L50 64" stroke="#8DA893" stroke-width="1.5" stroke-dasharray="2 3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Sage Metallic & Vitality Gradients -->
+    <linearGradient id="sagePrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C2D8C5"/>
+      <stop offset="45%" stop-color="#86A789"/>
+      <stop offset="100%" stop-color="#4E6B52"/>
+    </linearGradient>
+
+    <linearGradient id="sageEthereal" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#557559" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#86A789" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#DDF0E0" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <!-- Node Core Glow -->
+    <radialGradient id="centerGlow" cx="42%" cy="42%" r="58%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="35%" stop-color="#D7EAD9"/>
+      <stop offset="70%" stop-color="#86A789"/>
+      <stop offset="100%" stop-color="#3B523E"/>
+    </radialGradient>
+
+    <!-- Soft Aura Filter for Ethereal Longevity Resonance -->
+    <filter id="zenGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="subtleHalos" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur2"/>
+      <feComposite in="SourceGraphic" in2="blur2" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Group centered within 512x512 with transparent background -->
+  <g id="glowsculpt-emblem" transform="translate(0, 0)">
+    <!-- 1. Outer Circadian Horizon Geometries (Subtle dashed rhythm orbits) -->
+    <circle cx="256" cy="256" r="218" stroke="#86A789" stroke-width="1.25" stroke-dasharray="3 9" opacity="0.35"/>
+    <circle cx="256" cy="256" r="176" stroke="#86A789" stroke-width="1.5" opacity="0.22"/>
+    <circle cx="256" cy="256" r="132" stroke="#86A789" stroke-width="1" stroke-dasharray="6 6" opacity="0.4"/>
+
+    <!-- 2. Dynamic Circadian Zen Arc Arches (Flow of time & biological renewal) -->
+    <!-- East-North Arc -->
+    <path d="M 148 364 C 98 296 104 196 166 134 C 218 82 296 76 358 116" 
+          stroke="url(#sagePrimary)" 
+          stroke-width="3.5" 
+          stroke-linecap="round" 
+          filter="url(#subtleHalos)"
+          opacity="0.85"/>
+
+    <!-- West-South Counter-Balance Arc -->
+    <path d="M 364 148 C 414 216 408 316 346 378 C 294 430 216 436 154 396" 
+          stroke="url(#sagePrimary)" 
+          stroke-width="3.5" 
+          stroke-linecap="round" 
+          filter="url(#subtleHalos)"
+          opacity="0.6"/>
+
+    <!-- 3. The Sculpted Vitality Leaf & Lens Layers (Sacred Geometry / Vesica Piscis) -->
+    <!-- Left Leaf Petal - Cellular Hydration & Recovery -->
+    <path d="M 256 68 C 158 174 158 338 256 444 C 224 338 224 174 256 68 Z" 
+          fill="url(#sageEthereal)" 
+          opacity="0.35"/>
+
+    <!-- Right Leaf Petal - Longevity & Circulation Structure -->
+    <path d="M 256 68 C 354 174 354 338 256 444 C 288 338 288 174 256 68 Z" 
+          fill="url(#sageEthereal)" 
+          opacity="0.5"/>
+
+    <!-- Sacred Lens (Vesica Piscis Optical Perimeter) - Objective Visual Consistency -->
+    <path d="M 256 68 C 146 174 146 338 256 444 C 366 338 366 174 256 68 Z" 
+          stroke="url(#sagePrimary)" 
+          stroke-width="5" 
+          stroke-linejoin="round"
+          filter="url(#zenGlow)"/>
+
+    <!-- 4. Vertical Circadian Meridian Axis (Alignment & Consistency Spine) -->
+    <line x1="256" y1="96" x2="256" y2="416" 
+          stroke="#A8C9AB" 
+          stroke-width="2" 
+          stroke-dasharray="4 6" 
+          opacity="0.7"/>
+
+    <!-- 5. Equilibrium Node Points (Golden Ratio Rhythm Nodes) -->
+    <!-- Upper Meridian Point (Morning Awakening / Dawn Node) -->
+    <circle cx="256" cy="164" r="5" fill="#C4DEC6" opacity="0.9"/>
+    <circle cx="256" cy="164" r="11" stroke="#86A789" stroke-width="1.2" opacity="0.5"/>
+
+    <!-- Lower Meridian Point (Night Rest / Cellular Restoration Node) -->
+    <circle cx="256" cy="348" r="5" fill="#C4DEC6" opacity="0.9"/>
+    <circle cx="256" cy="348" r="11" stroke="#86A789" stroke-width="1.2" opacity="0.5"/>
+
+    <!-- Equatorial Balance Satellite Nodes (Left & Right Flanks) -->
+    <circle cx="198" cy="256" r="3.5" fill="#86A789" opacity="0.6"/>
+    <circle cx="314" cy="256" r="3.5" fill="#86A789" opacity="0.6"/>
+
+    <!-- 6. Central Vitality & Equilibrium Sphere (The Homeostasis Glow) -->
+    <!-- Subtle expanding outer aura -->
+    <circle cx="256" cy="256" r="42" fill="#86A789" opacity="0.12" filter="url(#zenGlow)"/>
+    <circle cx="256" cy="256" r="30" stroke="#A6C5A9" stroke-width="1.5" opacity="0.4"/>
+
+    <!-- Core Sphere -->
+    <circle cx="256" cy="256" r="21" fill="url(#centerGlow)" filter="url(#subtleHalos)"/>
+    
+    <!-- Central Pure White Light Sparkle (Purity & Awareness) -->
+    <circle cx="253" cy="253" r="6" fill="#FFFFFF" opacity="0.95"/>
+  </g>
 </svg>

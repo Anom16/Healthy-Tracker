@@ -140,12 +140,12 @@ export default function App() {
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
               <img 
                 src="/glowsculpt_logo.svg" 
-                alt="GlowSculpt Vitality" 
+                alt="Healthy Tracker" 
                 style={{ width: '32px', height: '32px', objectFit: 'contain' }}
               />
               <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.1 }}>
                 <span className="font-label-caps" style={{ color: 'var(--primary-accent)', fontSize: '10px', letterSpacing: '0.12em' }}>
-                  GLOWSCULPT
+                  HEALTHY TRACKER
                 </span>
                 <span className="font-title-md" style={{ color: 'var(--on-surface)', fontSize: '16px', fontWeight: 600 }}>
                   {TAB_TITLES[activeTab] || 'Home'}
